@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="global.css" />
+  <link href="css/buttontop.css" rel="stylesheet">
+
+  <title>Home | Primeira Classe</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav>
+      <div class="nav__bar">
+        <div class="logo">
+          <a href="#"><img src="imagens/Logo4.png" alt="logo" /></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#service">Serviços</a></li>
+        <li><a href="#offer">Oferta</a></li>
+        <li><a href="#client">Cliente</a></li>
+        <li><button class="btn" id="login-btn">Entrar/Cadastrar-se</button></li>
+      </ul>
+    </nav>
+
+
+    <div class="section__container header__container" id="home">
+      <h1>Não importa onde você vá, nós levamos você até lá</h1>
+      <p>
+        Você não tem o direito de permanecer em silêncio. Deixe-nos saber o
+        que é preciso para desafiá-lo
+      </p>
+      <div class="booking">
+        <div class="booking__type" id="booking-type">
+          <div class="active">Só de ida</div>
+          <div>Ida e volta</div>
+          <div>Multi-cidade</div>
+        </div>
+        <form action="/" class="booking__form">
+          <div class="booking__input">
+            <label for="arrival">Para</label>
+            <input type="text" placeholder="Chegada" />
+          </div>
+          <div class="booking__input">
+            <label for="departure">De</label>
+            <input type="text" placeholder="Partida" />
+          </div>
+          <div class="booking__input">
+            <label for="date">Data</label>
+            <input type="text" placeholder="Data" />
+          </div>
+        </form>
+        <div class="booking__btn">
+          <a href="secrvice.html"><button class="btn">Agende agora</button></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section__container service__container" id="service">
+    <h2 class="section__header">Nossos Serviços</h2>
+    <p class="section__description">
+      Embarque em viagens inesquecíveis com nossa plataforma de viagens e
+      turismo, onde o desejo de viajar encontra a conveniência.
+    </p>
+
+    <div class="service__grid">
+      <div class="service__card">
+        <img src="imagens/service1.jpg" alt="service" />
+        <div>
+          <div>
+            <h4>Bilhete de Cruzeiro</h4>
+            <p>
+              Mergulhe no fascínio do mar aberto enquanto navega em uma
+              experiência de cruzeiro meticulosamente elaborada.
+            </p>
+          </div>
+          <div class="service__btn">  
+            <a href="secrvice.html"><button class="btn">Ver tudo</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="service__card">
+        <img src="imagens/service2.jpg" alt="service" />
+        <div>
+          <div>
+            <h4>Reserva de carro</h4>
+            <p>
+              Experimente uma conveniência incomparável com nosso serviço de
+              reserva de carro, projetado para elevar sua viagem.
+            </p>
+          </div>
+          <div class="service__btn">
+            <a href="secrvice.html"><button class="btn">Ver tudo</button></a>
+       
+          </div>
+        </div>
+      </div>
+
+      <div class="service__card">
+        <img src="imagens/service3.jpg" alt="service" />
+        <div>
+          <div>
+            <h4>Passagem aérea</h4>
+            <p>
+              Garanta suas asas para o mundo com nosso serviço de passagens
+              aéreas, sua porta de entrada para viagens perfeitas.
+            </p>
+          </div>
+          <div class="service__btn">
+            <a href="secrvice.html"><button class="btn">Ver tudo</button></a>
+       
+          </div>
+        </div>
+      </div>
+
+      <div class="service__card">
+        <img src="imagens/service4.jpg" alt="service" />
+        <div>
+          <div>
+            <h4>Reserva no hotel</h4>
+            <p>
+              Navegue por uma seleção selecionada de hotéis escolhidos a dedo,
+              cada um escolhido por sua qualidade, comodidades e localização
+              privilegiada.
+            </p>
+          </div>
+          <div class="service__btn">
+            <a href="secrvice.html"><button class="btn">Ver tudo</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__container offer__container" id="offer">
+    <div class="offer__header">
+      <h2 class="section__header">Detalhes da oferta de voo</h2>
+      <a href="destinos.html">Ver tudo</a>
+    </div>
+    <div class="offer__grid">
+      <div class="offer__card">
+        <img src="imagens/oferta1.jpg" alt="offer" />
+        <h4>Viagem para USA</h4>
+        <p>15 Setembro 2024</p>
+        <div>
+          <span>Kz 820 000.00</span>
+          <a href="secrvice.html"><button class="btn">Agende agora</button></a>
+        </div>
+      </div>
+      <div class="offer__card">
+        <img src="imagens/oferta2.jpg" alt="offer" />
+        <h4>Viagem para Dubai</h4>
+        <p>20 Agosto 2024</p>
+        <div>
+          <span>Kz 487 000.00</span>
+          <a href="secrvice.html"><button class="btn">Agende agora</button></a>
+        </div>
+      </div>
+      <div class="offer__card">
+        <img src="imagens/oferta3.jpg" alt="offer" />
+        <h4>Viagem para Maldives</h4>
+        <p>09 Julho 2024</p>
+        <div>
+          <span>Kz 370 500.00</span>
+          <a href="secrvice.html"><button class="btn">Agende agora</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  
+
+  <section class="section__container about__conatiner" id="about">
+    <div class="about__image">
+      <img src="imagens/appSobre.png" alt="" />
+    </div>
+    <div class="about__content">
+      <h2 class="section__header">
+        Maneira fácil de ir para sua próxima estação
+      </h2>
+      <p class="section__description">
+        Navegue pelo mundo sem esforço com nossa plataforma fácil de usar,
+        conectando você aos melhores destinos e acomodações.
+      </p>
+      <ul>
+        <li>
+          <span><i class="ri-checkbox-circle-line"></i></span>
+          Encontre e compare facilmente opções de transporte, garantindo uma
+          viagem sem complicações até o seu próximo destino.
+        </li>
+        <li>
+          <span><i class="ri-checkbox-circle-line"></i></span>
+          Desfrute de uma experiência de reserva simples e rápida para voos,
+          trens e outros meios de transporte, tudo em um só lugar.
+        </li>
+      </ul>
+      <div class="about__links">
+        <a href="#">
+          <img src="imagens/google-play.png" alt="google-play" />
+        </a>
+        <a href="#">
+          <img src="imagens/app-store.png" alt="app-store" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="client" id="client">
+    <div class="section__container client__container">
+      <h2 class="section__header">O que dizem os nossos clientes?</h2>
+      <p class="section__description">
+        Descubra as histórias de desejo de viajar e memórias queridas através
+        dos olhos de nossos valiosos clientes.
+      </p>
+      <!--Container do main -->
+      <div class="swiper">
+        <!-- Aitional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="imagens/cliente001.jpg" alt="client" />
+              <h4>Cristiano Ronaldo</h4>
+              <p>Professor</p>
+              <div class="client__ratings">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+              </div>
+              <p>
+                Como viajante frequentemente, confio neste site para todas as
+                minhas viagens. O suporte ao cliente 24 horas por dia, 7 dias
+                por semana, foi uma virada de jogo.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="imagens/cliente2.jpg" alt="client" />
+              <h4>Graziela Lopes</h4>
+              <p>Empreendedora</p>
+              <div class="client__ratings">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+              </div>
+              <p>
+                Reservar as férias dos meus sonhos foi muito fácil com esta
+                plataforma! A reserva perfeita do hotel tornou minha viagem
+                inesquecível.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="imagens/cliente3.jpeg" alt="client" />
+              <h4>Rafaela Rafael</h4>
+              <p>Engenheira Cívil</p>
+              <div class="client__ratings">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+                <span><i class="ri-star-line"></i></span>
+              </div>
+              <p>
+                Os guias locais e as experiências oferecidas por esta
+                plataforma acrescentaram uma nova dimensão às minhas viagens.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="imagens/cliente4.jpg" alt="client" />
+              <h4>Délcio Capindiça</h4>
+              <p>Estudante Universitário</p>
+              <div class="client__ratings">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-half-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+              </div>
+              <p>
+                A conveniência de reservar voos, acomodações e transporte em
+                um só lugar mudou completamente tudo.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="imagens/cliente5.jpg" alt="client" />
+              <h4>José Eduardo</h4>
+              <p>Arqueologo</p>
+              <div class="client__ratings">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+                <span><i class="ri-star-line"></i></span>
+              </div>
+              <p>
+                A seção de recursos e dicas de viagem desta plataforma é uma
+                mina de ouro para quem deseja aproveitar ao máximo suas
+                viagens.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+
+  <footer class="footer">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <div class="logo">
+          <a href="#"><img src="imagens/Logo4.png" alt="logo" /></a>
+        </div>
+        <p>
+          Explore o mundo com facilidade e emoção através de nossa abrangente plataforma de viagens. Sua jornada começa
+          aqui, onde o planejamento perfeito encontra experiências inesquecíveis.
+        </p>
+        <ul class="footer__socials">
+          <li>
+            <a href="https://web.facebook.com/"><i class="ri-facebook-fill"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"><i class="ri-instagram-line"></i></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/"><i class="ri-youtube-line"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Links rápidos</h4>
+        <ul class="footer__links">
+          <li>
+            <a href="#">Ínicio</a>
+          </li>
+          <li>
+            <a href="#">Voos</a>
+          </li>
+          <li>
+            <a href="#">Hotéis</a>
+          </li>
+          <li>
+            <a href="#">Cruzeiro</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contacta-nos</h4>
+        <ul class="footer__links">
+          <li>
+            <a href="https://web.whatsapp.com/">
+              <span><i class="ri-phone-fill"></i></span> +244 912 345 678
+            </a>
+          </li>
+          <li>
+            <a href="https://mail.google.com/">
+              <span><i class="ri-record-mail-line"></i></span> info@primeira_classe
+          </li>
+          <li>
+            <a href="https://encurtador.com.br/6C5xP">
+              <span><i class="ri-map-pin-2-fill"></i></span> Luanda, Angola
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Se increver</h4>
+        <form action="/">
+          <input type="text" placeholder="Digite seu e-mail" />
+          <button class="btn">Se inscrever</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2024 - Primeira Classe | Todos direitos reservados.
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="javascript/main.js"></script>
+
+</body>
+
+</html>

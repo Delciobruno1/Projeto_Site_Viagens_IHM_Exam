@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Book Trip</title>
+    <link rel="stylesheet" href="css/service.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Nossos Serviços de Reservas</h1>
+        <div class="nav">
+            <button class="tablink" onclick="openTab(event, 'Voo')">Reserva de Voo</button>
+            <button class="tablink" onclick="openTab(event, 'Cruzeiro')">Reserva de Cruzeiro</button>
+            <button class="tablink" onclick="openTab(event, 'Carro')">Reserva de Carro</button>
+            <button class="tablink" onclick="openTab(event, 'Hotel')">Reserva de Hotel</button>
+        </div>
+        <div id="Voo" class="tabcontent">
+            <h2>Reserva de Voo</h2>
+            <form id="form-voo">
+                <label for="tipo-voo">Tipo de Voo:</label>
+                <select id="tipo-voo" name="tipo-voo" onchange="updateFlightForm()">
+                    <option value="ida">Só de Ida</option>
+                    <option value="ida-volta">Ida e Volta</option>
+                    <option value="multiplos">Destinos Múltiplos</option>
+                </select>
+                <div id="voo-destinos">
+                    <div class="voo-destino">
+                        <label for="origem-voo-1">Origem:</label>
+                        <input type="text" id="origem-voo-1" name="origem-voo-1">
+                        <label for="destino-voo-1">Destino:</label>
+                        <input type="text" id="destino-voo-1" name="destino-voo-1">
+                        <label for="data-voo-1">Data:</label>
+                        <input type="date" id="data-voo-1" name="data-voo-1">
+                    </div>
+                </div>
+                <div id="ida-volta-section" style="display: none;">
+                    <label for="data-volta-voo">Data de Volta:</label>
+                    <input type="date" id="data-volta-voo" name="data-volta-voo">
+                </div>
+                <button type="button" onclick="addDestino()">Adicionar Destino</button>
+                <label for="num-passageiros">Número de Passageiros:</label>
+                <input type="number" id="num-passageiros" name="num-passageiros" min="1" value="1">
+                <button type="submit">Reservar Voo</button>
+                <div id="preco-total"></div>
+                <button type="button" onclick="voltarMenu()">Voltar ao Menu Principal</button>
+            </form>
+        </div>
+        <div id="Cruzeiro" class="tabcontent">
+            <h2>Reserva de Cruzeiro</h2>
+            <form>
+                <label for="destino-cruzeiro">Destino:</label>
+                <input type="text" id="destino-cruzeiro" name="destino-cruzeiro">
+                <label for="data-cruzeiro">Data:</label>
+                <input type="date" id="data-cruzeiro" name="data-cruzeiro">
+                <button type="submit">Reservar Cruzeiro</button>
+                <button type="button" onclick="voltarMenu()">Voltar ao Menu Principal</button>
+            </form>
+        </div>
+        <div id="Carro" class="tabcontent">
+            <h2>Reserva de Carro</h2>
+            <form>
+                <label for="local-carro">Local:</label>
+                <input type="text" id="local-carro" name="local-carro">
+                <label for="data-inicio-carro">Data de Início:</label>
+                <input type="date" id="data-inicio-carro" name="data-inicio-carro">
+                <label for="data-fim-carro">Data de Fim:</label>
+                <input type="date" id="data-fim-carro" name="data-fim-carro">
+                <button type="submit">Reservar Carro</button>
+                <button type="button" onclick="voltarMenu()">Voltar ao Menu Principal</button>
+            </form>
+        </div>
+        <div id="Hotel" class="tabcontent">
+            <h2>Reserva de Hotel</h2>
+            <form>
+                <label for="destino-hotel">Destino:</label>
+                <input type="text" id="destino-hotel" name="destino-hotel">
+                <label for="data-inicio-hotel">Data de Início:</label>
+                <input type="date" id="data-inicio-hotel" name="data-inicio-hotel">
+                <label for="data-fim-hotel">Data de Fim:</label>
+                <input type="date" id="data-fim-hotel" name="data-fim-hotel">
+                <button type="submit">Reservar Hotel</button>
+                <button type="button" onclick="voltarMenu()">Voltar ao Menu Principal</button>
+            </form>
+        </div>
+        <div id="mensagem" class="mensagem"></div>
+    </div>
+    <script src="javascript/service.js"></script>
+</body>
+</html>

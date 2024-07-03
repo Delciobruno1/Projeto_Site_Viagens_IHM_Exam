@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.heading {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.tablink {
+    background-color: #f1f1f1;
+    color: black;
+    padding: 14px 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tablink:hover {
+    background-color: #ddd;
+}
+
+.tabcontent {
+    display: none;
+    border-top: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    background-color: #0051ff;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #03276a;
+}
+
+label {
+    margin: 0.5rem 0;
+}
+
+input, select {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.5rem;
+    background-color: #0051ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #03276a;
+}
+
+.mensagem {
+    display: none;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid #4CAF50;
+    background-color: #dff0d8;
+    color: #0051ff;
+    border-radius: 4px;
+}
+
+.error {
+    display: block;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    color: red;
+}
+
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .tablink {
+        margin-bottom: 0.5rem;
+    }
+}
